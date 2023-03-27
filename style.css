@@ -72,6 +72,9 @@ form input {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
+.button__round:hover {
+  opacity: 0.85;
+}
 .button__round--default-color {
   background: linear-gradient(#FF79DA, #9356DC);
 }
@@ -147,6 +150,10 @@ h2 {
 }
 .restaurant-presentation li {
   list-style: none;
+}
+.restaurant-presentation a {
+  color: unset;
+  text-decoration: unset;
 }
 
 .restaurant-choice {

@@ -1,14 +1,4 @@
-/*POLICES*/
-$header-font : 'Shrikhand', cursive;
-$main-font : 'Roboto', sans-serif;
-
-/*FOND*/
-$main-background : #F6F6F6;
-$footer-background :#353535;
-
-/*COULEURS*/
-$button-main-color : linear-gradient(#FF79DA, #9356DC);
-$check-color : #99E2D0;
+@import 'Utils/variables';
 
 body {
     margin: 0px;
@@ -77,6 +67,9 @@ form {
     color:#FFFFFF;
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,.25);
     cursor: pointer;
+    &:hover {
+        opacity: 0.85;
+    }
     &--default-color {
         background: $button-main-color;
     }
@@ -151,6 +144,10 @@ h2 {
     }
     & li {
         list-style: none;
+    }
+    & a {
+        color: unset;
+        text-decoration: unset;
     }
 }
 .restaurant-choice {
