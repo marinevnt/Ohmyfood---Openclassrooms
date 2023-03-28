@@ -6,7 +6,6 @@
     font-family: $main-font;
     font-size: 15px;
     font-weight: 500;
-    color:#FFFFFF;
     box-shadow: 0px 4px 10px 0px rgba(0,0,0,.25);
     cursor: pointer;
     &:hover {
@@ -14,12 +13,16 @@
     }
     &--default-color {
         background: $button-main-color;
+        color:#FFFFFF;
     }
     &--explore {
         width: 220px;
     }
     &--command {
         width: 185px;
+    }
+    &--white-color {
+        color:#9356DC;
     }
 }
 

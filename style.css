@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*POLICES*/
 /*FOND*/
 /*COULEURS*/
@@ -9,58 +10,13 @@ main {
   font-family: "Roboto", sans-serif;
 }
 
-/* HEADER */
-header {
-  font-family: "Shrikhand", cursive;
-  font-size: 17px;
-  display: flex;
-  justify-content: center;
-}
-header h1 {
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-
-/* LOCALISATION */
-form {
-  background-color: #EAEAEA;
-  box-shadow: 0px -2px 4px lightgray;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-}
-form #icon-location {
-  line-height: 50px;
-  margin: 0px 20px;
-}
-form input {
-  background-color: #EAEAEA;
-  border: none;
-  font-size: 16px;
-  outline: none;
-}
-
-::placeholder {
-  opacity: 1;
-  font-family: "Roboto", sans-serif;
-}
-
-/*SECTION ANNONCE*/
-#announce {
-  text-align: center;
-  background-color: #F6F6F6;
-  padding-top: 40px;
-  padding-bottom: 60px;
-}
-#announce h2 {
+/*Titre Homepage FONCTIONNEMENT*/
+h2 {
   font-size: 25px;
-  margin: 0px 40px;
-}
-#announce h3 {
-  font-size: 18px;
-  font-weight: 300;
+  margin-left: 20px;
 }
 
+/*Bouton général EXPLORER et COMMANDER*/
 .button__round {
   border-radius: 25px;
   border: none;
@@ -68,7 +24,6 @@ form input {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 500;
-  color: #FFFFFF;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
@@ -77,6 +32,7 @@ form input {
 }
 .button__round--default-color {
   background: linear-gradient(#FF79DA, #9356DC);
+  color: #FFFFFF;
 }
 .button__round--explore {
   width: 220px;
@@ -84,18 +40,11 @@ form input {
 .button__round--command {
   width: 185px;
 }
-
-/*SECTION FONCTIONNEMENT*/
-h2 {
-  font-size: 25px;
-  margin-left: 20px;
+.button__round--white-color {
+  color: #9356DC;
 }
 
-.explanation {
-  display: flex;
-  flex-wrap: wrap;
-}
-
+/*Bouton Homepage FONCTIONNEMENT*/
 .button__functioning {
   display: flex;
   padding-left: 20px;
@@ -139,6 +88,171 @@ h2 {
   line-height: 72px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+}
+
+/*Boutons CARTES MENUS */
+.button-card {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  width: 92%;
+  margin-left: 15px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.button-card--text {
+  padding: 10px 12px;
+  overflow: hidden;
+}
+.button-card--text h4 {
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.button-card--text p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.button-card--price {
+  display: flex;
+  align-items: end;
+  padding-right: 10px;
+  padding-bottom: 12px;
+  margin-bottom: 0px;
+}
+
+.button-position {
+  display: flex;
+  justify-content: center;
+}
+
+#icon-heart {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  font-size: 24px;
+  bottom: 35px;
+  right: 25px;
+}
+
+/*Flèche du header*/
+#header-arrow {
+  position: absolute;
+  left: 22px;
+  top: 20px;
+  font-size: 20px;
+  color: #353535;
+}
+#header-arrow :hover {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  padding-left: 7px;
+  padding-right: 2px;
+  padding-top: 6px;
+  padding-bottom: 4px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  color: #9356DC;
+  transition: ease-in-out 400ms;
+}
+
+header {
+  font-family: "Shrikhand", cursive;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+}
+header h1 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding-bottom: 20px;
+}
+footer ul {
+  padding: 0px;
+}
+footer li {
+  list-style: none;
+  margin-left: 25px;
+  display: flex;
+}
+footer h3 {
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+  margin-left: 25px;
+  padding-top: 25px;
+  font-weight: 400;
+}
+footer p {
+  font-family: "Roboto", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+footer .footer-icon {
+  width: 28px;
+}
+
+/* LOCALISATION */
+form {
+  background-color: #EAEAEA;
+  box-shadow: 0px -2px 4px lightgray;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+form #icon-location {
+  line-height: 50px;
+  margin: 0px 20px;
+}
+form input {
+  background-color: #EAEAEA;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+::placeholder {
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+
+/*SECTION ANNONCE*/
+#announce {
+  text-align: center;
+  background-color: #F6F6F6;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+#announce h2 {
+  font-size: 25px;
+  margin: 0px 40px;
+}
+#announce h3 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/*SECTION FONCTIONNEMENT*/
+.explanation {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*SECTION CHOIX DES RESTAURANTS */
@@ -201,59 +315,7 @@ h2 {
   object-fit: cover;
 }
 
-#icon-heart {
-  position: relative;
-  display: flex;
-  justify-content: end;
-  font-size: 24px;
-  bottom: 35px;
-  right: 25px;
-}
-
-/*FOOTER*/
-footer {
-  background-color: #353535;
-  color: white;
-  padding-bottom: 20px;
-}
-footer ul {
-  padding: 0px;
-}
-footer li {
-  list-style: none;
-  margin-left: 25px;
-  display: flex;
-}
-footer h3 {
-  font-family: "Shrikhand", cursive;
-  font-size: 20px;
-  margin-left: 25px;
-  padding-top: 25px;
-  font-weight: 400;
-}
-footer p {
-  font-family: "Roboto", sans-serif;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
-footer a {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-footer .footer-icon {
-  width: 28px;
-}
-
 /* MENU - LA PALETTE DU GOUT */
-#header-arrow {
-  position: relative;
-  position: absolute;
-  left: 22px;
-  top: 26px;
-  font-size: 20px;
-  color: #353535;
-}
-
 .menu-image {
   height: 270px;
   width: 100%;
@@ -285,59 +347,6 @@ footer .footer-icon {
 }
 .menu-card section {
   margin-bottom: 40px;
-}
-
-.button-card {
-  background-color: #FFFFFF;
-  border-radius: 15px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-  width: 92%;
-  margin-left: 15px;
-  margin-top: 15px;
-  display: flex;
-  justify-content: space-between;
-}
-.button-card--text {
-  padding: 10px 12px;
-  overflow: hidden;
-}
-.button-card--text h4 {
-  font-size: 18px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.button-card--text p {
-  font-size: 16px;
-  font-weight: 300;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.button-card--price {
-  display: flex;
-  align-items: end;
-  padding-right: 10px;
-  padding-bottom: 12px;
-  margin-bottom: 0px;
-}
-
-#icon-heart-2 {
-  position: relative;
-  display: flex;
-  justify-content: end;
-  font-size: 24px;
-  bottom: 35px;
-  right: 25px;
-}
-
-.button-position {
-  display: flex;
-  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
