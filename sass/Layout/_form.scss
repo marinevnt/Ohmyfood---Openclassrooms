@@ -1,0 +1,22 @@
+/* LOCALISATION */
+form {
+    background-color: #EAEAEA;
+    box-shadow: 0px -2px 4px lightgray;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    & #icon-location {
+        line-height: 50px;
+        margin: 0px 20px;
+    }
+    & input {
+        background-color: #EAEAEA;
+        border: none;
+        font-size: 16px;
+        outline: none;
+    }
+}
+::placeholder {
+    opacity: 1;
+    font-family: $main-font;
+}

@@ -1,0 +1,32 @@
+footer {
+    background-color: $footer-background;
+    color: white;
+    padding-bottom: 20px;
+    & ul {
+        padding: 0px;
+    }
+    & li {
+        list-style: none;
+        margin-left: 25px;
+        display: flex;
+    }
+    & h3 {
+        font-family: $header-font;
+        font-size: 20px;
+        margin-left: 25px;
+        padding-top: 25px;
+        font-weight: 400;
+    }
+    & p {
+        font-family: $main-font;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    & a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    & .footer-icon {
+        width: 28px;
+    }
+}
