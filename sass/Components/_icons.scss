@@ -1,0 +1,18 @@
+#icon-heart {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    font-size: 24px;
+    bottom : 35px;
+    right: 25px;
+}
+
+/*Flèche du header*/
+#header-arrow {
+    position: relative;
+    position: absolute;
+    left: 22px;
+    top: 26px;
+    font-size: 20px;
+    color: $footer-background;
+}

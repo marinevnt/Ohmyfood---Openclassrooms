@@ -1,6 +1,7 @@
 @import 'Base/typography';
 
 @import 'Components/buttons';
+@import 'Components/icons';
 
 @import 'Layout/header';
 @import 'Layout/footer';
@@ -89,24 +90,10 @@
 .cover {
     object-fit: cover ;
 }
-#icon-heart {
-    position: relative;
-    display: flex;
-    justify-content: end;
-    font-size: 24px;
-    bottom : 35px;
-    right: 25px;
-}
+
 
 /* MENU - LA PALETTE DU GOUT */
-#header-arrow {
-    position: relative;
-    position: absolute;
-    left: 22px;
-    top: 26px;
-    font-size: 20px;
-    color: $footer-background;
-}
+
 .menu-image {
     height: 270px;
     width: 100%;
