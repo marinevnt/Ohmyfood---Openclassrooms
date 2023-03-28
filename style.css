@@ -136,6 +136,25 @@ h2 {
   justify-content: center;
 }
 
+/*bouton coeur*/
+.button-heart {
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+.button-heart--homepage {
+  bottom: 55px;
+  right: 25px;
+}
+.button-heart--menu {
+  bottom: 35px;
+  right: 25px;
+}
+.button-heart button {
+  border: none;
+  background-color: unset;
+}
+
 /*bouton flèche HEADER */
 .button-arrow {
   position: absolute;
@@ -156,12 +175,7 @@ h2 {
 }
 
 #icon-heart {
-  position: relative;
-  display: flex;
-  justify-content: end;
   font-size: 24px;
-  bottom: 35px;
-  right: 25px;
 }
 
 /*Flèche du header*/

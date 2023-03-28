@@ -118,6 +118,25 @@
     justify-content: center ;
 }
 
+/*bouton coeur*/
+.button-heart {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    &--homepage {
+        bottom: 55px;
+        right: 25px;
+    }
+    &--menu {
+        bottom: 35px;
+        right: 25px;
+    }
+    & button {
+        border: none;
+        background-color: unset;
+    }
+}
+
 /*bouton flèche HEADER */
 .button-arrow {
     position: absolute;
