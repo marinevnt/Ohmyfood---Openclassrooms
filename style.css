@@ -26,6 +26,7 @@ h2 {
   font-weight: 500;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  transition: 200ms ease-in-out;
 }
 .button__round:hover {
   opacity: 0.85;
@@ -135,6 +136,25 @@ h2 {
   justify-content: center;
 }
 
+/*bouton flèche HEADER */
+.button-arrow {
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  font-size: 20px;
+  border: none;
+  background-color: white;
+}
+.button-arrow i {
+  padding: 8px 10px;
+  transition: 200ms ease-in-out;
+}
+.button-arrow :hover i {
+  padding: 8px 10px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
 #icon-heart {
   position: relative;
   display: flex;
@@ -146,23 +166,8 @@ h2 {
 
 /*Flèche du header*/
 #header-arrow {
-  position: absolute;
-  left: 22px;
-  top: 20px;
   font-size: 20px;
   color: #353535;
-}
-#header-arrow :hover {
-  border-radius: 50%;
-  width: 25px;
-  height: 25px;
-  padding-left: 7px;
-  padding-right: 2px;
-  padding-top: 6px;
-  padding-bottom: 4px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  color: #9356DC;
-  transition: ease-in-out 400ms;
 }
 
 header {
