@@ -125,7 +125,7 @@
     justify-content: end;
     &--homepage {
         bottom: 55px;
-        right: 25px;
+        right: 35px;
     }
     &--menu {
         bottom: 35px;
@@ -133,7 +133,8 @@
     }
     & button {
         border: none;
-        background-color: unset;
+        background-color: transparent;
+        cursor: pointer;
     }
 }
 
