@@ -83,9 +83,16 @@
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
+    &:hover > .menu-choice {
+        transform: translate(0px);
+        width: 80px;
+        opacity: 1;
+    }
     &--text {
         padding: 10px 12px;
         overflow: hidden;
+        width: 90%;
         & h4 {
             font-size: 18px;
             margin-top: 0px;
@@ -107,9 +114,11 @@
     &--price {
         display: flex;
         align-items: end;
-        padding-right: 10px;
+        padding-right: 12px;
         padding-bottom: 12px;
         margin-bottom: 0px;
+        width: 10%;
+        justify-content: end;
     }
 }
 

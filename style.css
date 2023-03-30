@@ -101,10 +101,17 @@ h2 {
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
+}
+.button-card:hover > .menu-choice {
+  transform: translate(0px);
+  width: 80px;
+  opacity: 1;
 }
 .button-card--text {
   padding: 10px 12px;
   overflow: hidden;
+  width: 90%;
 }
 .button-card--text h4 {
   font-size: 18px;
@@ -126,9 +133,11 @@ h2 {
 .button-card--price {
   display: flex;
   align-items: end;
-  padding-right: 10px;
+  padding-right: 12px;
   padding-bottom: 12px;
   margin-bottom: 0px;
+  width: 10%;
+  justify-content: end;
 }
 
 .button-position {
@@ -376,6 +385,39 @@ form input {
 }
 .menu-card section {
   margin-bottom: 40px;
+}
+
+.menu-choice {
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  display: flex;
+  overflow: hidden;
+  width: 10px;
+  opacity: 0;
+  height: auto;
+  transition: transform 600ms ease-in-out, width 300ms ease-in-out, opacity 300ms ease-in-out;
+  animation-delay: 0ms;
+  cursor: pointer;
+}
+.menu-choice i {
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  transition: transform 600ms ease-in-out;
+  transform: rotate(-360deg);
+}
+.menu-choice:hover {
+  transform: translate(0px);
+  width: 80px;
+  opacity: 1;
+}
+.menu-choice:hover > i {
+  transform: rotate(2turn);
+  animation-delay: 0ms;
 }
 
 /*# sourceMappingURL=style.css.map */

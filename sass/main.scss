@@ -125,3 +125,36 @@
         margin-bottom: 40px;
     }
 }
+
+.menu-choice {
+    background-color: $check-color;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    overflow: hidden;
+    width: 10px;
+    opacity: 0;
+    height: auto;
+    transition: transform 600ms ease-in-out, width 300ms ease-in-out, opacity 300ms ease-in-out;
+    animation-delay: 0ms;
+    cursor: pointer;
+    & i {
+        color: #ffff;
+        font-size: 20px;
+        font-weight:900;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        transition: transform 600ms ease-in-out;
+        transform: rotate(-360deg);
+    }
+    &:hover {
+        transform: translate(0px);
+        width: 80px;
+        opacity: 1;
+    }
+    &:hover > i {
+        transform: rotate(2turn);
+        animation-delay: 0ms;
+    }
+}
