@@ -16,6 +16,15 @@ h2 {
   margin-left: 20px;
 }
 
+/*Appartition des plats en cascade*/
+@keyframes translate {
+  0% {
+    translatey: 30px;
+  }
+  100% {
+    translatey: 0px;
+  }
+}
 /*Bouton général EXPLORER et COMMANDER*/
 .button__round {
   border-radius: 25px;
@@ -53,7 +62,7 @@ h2 {
   margin-bottom: 20px;
   background-color: #F6F6F6;
   border-radius: 20px;
-  width: 320px;
+  width: 100%;
   justify-content: center;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   margin-left: 20px;
@@ -61,14 +70,15 @@ h2 {
 .button__functioning--icon {
   line-height: 72px;
   position: relative;
-  right: 50px;
+  right: 10px;
+  width: 10%;
 }
 .button__functioning--number {
   position: relative;
   background-color: #9356DC;
   color: white;
   border-radius: 50%;
-  right: 73px;
+  left: -35px;
   height: 24px;
   top: 24px;
   padding: 0px 8px;
@@ -81,8 +91,7 @@ h2 {
 }
 .button__functioning--text {
   position: relative;
-  left: -20px;
-  width: 200px;
+  width: 90%;
 }
 .button__functioning--text h4 {
   margin: 0px;
@@ -152,23 +161,6 @@ h2 {
   animation-delay: 300ms;
 }
 
-@keyframes translate {
-  0% {
-    translate: 30px;
-  }
-  100% {
-    translate: 0px;
-    visibility: visible;
-  }
-}
-@keyframes opacity {
-  0% {
-    opacity: 0px;
-  }
-  100% {
-    opacity: 1px;
-  }
-}
 .button-position {
   display: flex;
   justify-content: center;
@@ -319,7 +311,8 @@ form input {
 /*SECTION FONCTIONNEMENT*/
 .explanation {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  width: 85%;
 }
 
 /*SECTION CHOIX DES RESTAURANTS */
@@ -435,6 +428,9 @@ form input {
   align-items: center;
   justify-content: center;
   width: 80px;
+  rotate: -360deg;
+  transition: transform 200ms ease-in-out;
+  transform: rotate(-360deg);
 }
 .menu-choice:hover {
   transform: translate(0px);
@@ -442,15 +438,67 @@ form input {
   opacity: 1;
 }
 .menu-choice:hover > i {
-  animation: icon-rotate 300ms forwards;
+  transform: rotate(0deg);
 }
 
-@keyframes icon-rotate {
-  0% {
-    transform: rotate(0);
+/*HOMEPAGE*/
+@media all and (min-width: 665px) {
+  .explanation {
+    flex-direction: row;
+    width: 95%;
   }
-  100% {
-    transform: rotate(360deg);
+  .button__functioning {
+    max-width: 320px;
+    margin-right: 15px;
+  }
+  .button__functioning--text {
+    display: flex;
+    align-items: center;
+  }
+  .button__functioning--text h4 {
+    line-height: 20px;
+  }
+  .restaurant-presentation ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .restaurant-presentation li {
+    width: 50%;
+    max-width: 530px;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 115px;
+    align-items: end;
+  }
+  footer ul {
+    display: flex;
+  }
+  footer h3 {
+    margin-right: 40px;
+    margin-left: 60px;
+  }
+}
+@media all and (min-width: 992px) {
+  #announce h2 {
+    font-size: 35px;
+  }
+  #functionning-section {
+    margin: 0px 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  #functionning-section .explanation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .restaurant-presentation {
+    margin: 0px 100px;
+  }
+  .restaurant-presentation ul {
+    justify-content: space-between;
   }
 }
 

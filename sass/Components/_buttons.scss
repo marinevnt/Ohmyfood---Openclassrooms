@@ -35,21 +35,22 @@
     margin-bottom: 20px;
     background-color: #F6F6F6;
     border-radius: 20px;
-    width: 320px;
+    width: 100%;
     justify-content: center;
     box-shadow: 0px 4px 15px 0px rgba(0,0,0,.15);
     margin-left: 20px;
     &--icon {
         line-height: 72px;
         position: relative;
-        right: 50px;
+        right: 10px;
+        width: 10%;
     }
     &--number {
         position: relative;
         background-color: #9356DC;
         color: white;
         border-radius: 50%;
-        right: 73px;
+        left: -35px;
         height: 24px;
         top: 24px;
         padding:0px 8px;
@@ -62,8 +63,7 @@
     }
     &--text {
         position: relative;
-        left: -20px;
-        width: 200px;
+        width: 90%;
         & h4 {
             margin: 0px;
             line-height: 72px;
@@ -132,15 +132,6 @@
         animation: translate 400ms forwards;
         animation-delay: 300ms;
         
-    }
-}
-
-@keyframes translate {
-    0% {
-        translatey: 30px;
-    }
-    100% {
-        translatey: 0px;
     }
 }
 

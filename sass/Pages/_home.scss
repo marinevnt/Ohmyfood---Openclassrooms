@@ -17,7 +17,8 @@
 /*SECTION FONCTIONNEMENT*/
 .explanation {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 85%;
 }
 
 
