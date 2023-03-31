@@ -15,7 +15,6 @@
 
 
 
-/*HOMEPAGE*/
 @media all and (min-width: 665px) {
     .explanation {
         flex-direction:row;
@@ -55,6 +54,11 @@
             margin-left: 60px;
         }
     }
+    .menu-card {
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+    }
 } 
 
 @media all and (min-width: 992px) {
@@ -78,5 +82,17 @@
         & ul {
             justify-content: space-between;
         }
+    }
+    .menu-card--title {
+        text-align: center;
+    }
+    .menu-card section {
+        width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .button-heart--menu {
+        justify-content: center;
+        margin-left: 350px;
     }
 }

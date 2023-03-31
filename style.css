@@ -49,6 +49,7 @@ h2 {
 }
 .button__round--command {
   width: 185px;
+  margin: 40px 0px;
 }
 .button__round--white-color {
   color: #9356DC;
@@ -252,6 +253,7 @@ footer h3 {
   font-family: "Shrikhand", cursive;
   font-size: 20px;
   margin-left: 25px;
+  margin-top: 0px;
   padding-top: 25px;
   font-weight: 400;
 }
@@ -406,7 +408,7 @@ form input {
   margin-left: 15px;
 }
 .menu-card section {
-  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .menu-choice {
@@ -441,7 +443,6 @@ form input {
   transform: rotate(0deg);
 }
 
-/*HOMEPAGE*/
 @media all and (min-width: 665px) {
   .explanation {
     flex-direction: row;
@@ -479,6 +480,11 @@ form input {
     margin-right: 40px;
     margin-left: 60px;
   }
+  .menu-card {
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+  }
 }
 @media all and (min-width: 992px) {
   #announce h2 {
@@ -499,6 +505,18 @@ form input {
   }
   .restaurant-presentation ul {
     justify-content: space-between;
+  }
+  .menu-card--title {
+    text-align: center;
+  }
+  .menu-card section {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button-heart--menu {
+    justify-content: center;
+    margin-left: 350px;
   }
 }
 
