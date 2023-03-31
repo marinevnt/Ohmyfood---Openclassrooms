@@ -1,0 +1,9 @@
+/*Appartition des plats en cascade*/
+@keyframes translate {
+    0% {
+        translatey: 30px;
+    }
+    100% {
+        translatey: 0px;
+    }
+}

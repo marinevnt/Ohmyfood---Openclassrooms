@@ -139,7 +139,36 @@ h2 {
   width: 10%;
   justify-content: end;
 }
+.button-card--delay1 {
+  animation: translate 400ms forwards;
+  animation-delay: 0s;
+}
+.button-card--delay2 {
+  animation: translate 400ms forwards;
+  animation-delay: 150ms;
+}
+.button-card--delay3 {
+  animation: translate 400ms forwards;
+  animation-delay: 300ms;
+}
 
+@keyframes translate {
+  0% {
+    translate: 30px;
+  }
+  100% {
+    translate: 0px;
+    visibility: visible;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0px;
+  }
+  100% {
+    opacity: 1px;
+  }
+}
 .button-position {
   display: flex;
   justify-content: center;
@@ -396,7 +425,6 @@ form input {
   opacity: 0;
   height: auto;
   transition: transform 600ms ease-in-out, width 300ms ease-in-out, opacity 300ms ease-in-out;
-  animation-delay: 0ms;
   cursor: pointer;
 }
 .menu-choice i {
@@ -407,8 +435,6 @@ form input {
   align-items: center;
   justify-content: center;
   width: 80px;
-  transition: transform 600ms ease-in-out;
-  transform: rotate(-360deg);
 }
 .menu-choice:hover {
   transform: translate(0px);
@@ -416,8 +442,16 @@ form input {
   opacity: 1;
 }
 .menu-choice:hover > i {
-  transform: rotate(2turn);
-  animation-delay: 0ms;
+  animation: icon-rotate 300ms forwards;
+}
+
+@keyframes icon-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

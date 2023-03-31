@@ -120,6 +120,28 @@
         width: 10%;
         justify-content: end;
     }
+    &--delay1 {
+        animation: translate 400ms forwards;
+        animation-delay: 0s;
+    }
+    &--delay2 {
+        animation: translate 400ms forwards;
+        animation-delay: 150ms;
+    }
+    &--delay3 {
+        animation: translate 400ms forwards;
+        animation-delay: 300ms;
+        
+    }
+}
+
+@keyframes translate {
+    0% {
+        translatey: 30px;
+    }
+    100% {
+        translatey: 0px;
+    }
 }
 
 .button-position {
