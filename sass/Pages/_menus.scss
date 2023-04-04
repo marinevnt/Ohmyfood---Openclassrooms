@@ -32,16 +32,15 @@
     }
 }
 
+/*Sélection du menu*/
 .menu-choice {
     background-color: $check-color;
     border-radius: 0px 15px 15px 0px;
     display: flex;
     overflow: hidden;
-    width: 10px;
-    opacity: 0;
+    width: 0px;
     height: auto;
-    transition: transform 600ms ease-in-out, width 300ms ease-in-out, opacity 300ms ease-in-out;
-    transition: translate 600ms ease-in-out;
+    transition: 600ms ease-in-out;
     cursor: pointer;
     & i {
         color: #ffff;
@@ -51,16 +50,14 @@
         align-items: center;
         justify-content: center;
         width: 80px;
-        rotate: -360deg;
         transition: transform 200ms ease-in-out;
-        transform: rotate(-360deg);
+        transform: rotate(0deg);
     }
     &:hover {
         transform: translate(0px);
         width: 80px;
-        opacity: 1;
     }
     &:hover > i {
-        transform: rotate(0deg);
+        transform: rotate(-360deg);
     }
 }

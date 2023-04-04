@@ -211,15 +211,19 @@ h2 {
 
 .icon-heart {
   font-size: 24px;
+  width: 30px;
   position: absolute;
-  transition: 400ms ease-in-out;
-}
-.icon-heart--empty:hover {
-  -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  font-weight: 900;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-background-clip: text;
+  -webkit-text-stroke-color: #000000;
+  transition: all 200ms linear;
   background-image: linear-gradient(#FF79DA, #9356DC);
+}
+.icon-heart:hover {
+  font-weight: 900;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0);
 }
 
 /*Flèche du header*/
@@ -362,7 +366,7 @@ form input {
   width: 80px;
   height: 30px;
   bottom: 230px;
-  left: 70%;
+  left: 73%;
   background-color: #99E2D0;
   color: #008766;
   border-radius: 2px;
@@ -414,16 +418,15 @@ form input {
   margin-top: 40px;
 }
 
+/*Sélection du menu*/
 .menu-choice {
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
   display: flex;
   overflow: hidden;
-  width: 10px;
-  opacity: 0;
+  width: 0px;
   height: auto;
-  transition: transform 600ms ease-in-out, width 300ms ease-in-out, opacity 300ms ease-in-out;
-  transition: translate 600ms ease-in-out;
+  transition: 600ms ease-in-out;
   cursor: pointer;
 }
 .menu-choice i {
@@ -434,17 +437,15 @@ form input {
   align-items: center;
   justify-content: center;
   width: 80px;
-  rotate: -360deg;
   transition: transform 200ms ease-in-out;
-  transform: rotate(-360deg);
+  transform: rotate(0deg);
 }
 .menu-choice:hover {
   transform: translate(0px);
   width: 80px;
-  opacity: 1;
 }
 .menu-choice:hover > i {
-  transform: rotate(0deg);
+  transform: rotate(-360deg);
 }
 
 @media all and (min-width: 665px) {

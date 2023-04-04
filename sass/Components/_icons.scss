@@ -1,17 +1,19 @@
 .icon-heart {
     font-size: 24px;
+    width: 30px;
     position: absolute;
-    transition: 400ms ease-in-out;
-    &--empty {
-        &:hover {
-            -webkit-text-fill-color: transparent;
-            background-clip:text;
-            -webkit-background-clip: text;
-            font-weight: 900;
-            background-image: $button-main-color;
-        }
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+    -webkit-background-clip: text;
+    -webkit-text-stroke-color:#000000;
+    transition: all 200ms linear;
+    background-image: $button-main-color;
+    &:hover {
+        font-weight: 900;
+        -webkit-text-stroke-color: #0000;
     }
- }
+}
 
 
 
