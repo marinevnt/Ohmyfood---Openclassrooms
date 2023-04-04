@@ -1,5 +1,3 @@
-@import 'Utils/variables';
-
 @import 'Base/typography';
 @import 'Base/animations';
 
@@ -13,86 +11,6 @@
 @import 'Pages/home';
 @import 'Pages/menus';
 
+@import 'Utils/variables';
+@import 'Utils/responsive';
 
-
-@media all and (min-width: 665px) {
-    .explanation {
-        flex-direction:row;
-        width:95%;
-    }
-    .button__functioning {
-        max-width: 320px;
-        margin-right: 15px;
-        &--text {
-            display: flex;
-            align-items: center;
-            & h4 {
-                line-height: 20px;
-            }
-        }
-    }
-    .restaurant-presentation {
-        & ul {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        & li {
-            width: 50%;
-            max-width: 530px;
-        }
-    }
-    footer {
-        display: flex;
-        flex-direction: row-reverse;
-        height: 115px;
-        align-items: end;
-        & ul {
-            display: flex;
-        }
-        & h3 {
-            margin-right: 40px;
-            margin-left: 60px;
-        }
-    }
-    .menu-card {
-        margin-right: auto;
-        margin-left: auto;
-        width: 80%;
-    }
-} 
-
-@media all and (min-width: 992px) {
-    #announce {
-        & h2 {
-            font-size: 35px;
-        }
-    }
-    #functionning-section {
-        margin: 0px 100px;
-        display: flex;
-        flex-direction: column;
-        & .explanation {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-        }
-    }
-    .restaurant-presentation {
-        margin: 0px 100px;
-        & ul {
-            justify-content: space-between;
-        }
-    }
-    .menu-card--title {
-        text-align: center;
-    }
-    .menu-card section {
-        width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    }
-    .button-heart--menu {
-        justify-content: center;
-        margin-left: 350px;
-    }
-}

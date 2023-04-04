@@ -19,10 +19,10 @@ h2 {
 /*Appartition des plats en cascade*/
 @keyframes translate {
   0% {
-    translatey: 30px;
+    translate: 30px;
   }
   100% {
-    translatey: 0px;
+    translate: 0px;
   }
 }
 /*Bouton général EXPLORER et COMMANDER*/
@@ -99,6 +99,9 @@ h2 {
   line-height: 72px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+}
+.button__functioning .icon-colored {
+  color: #9356DC;
 }
 
 /*Boutons CARTES MENUS */
@@ -420,6 +423,7 @@ form input {
   opacity: 0;
   height: auto;
   transition: transform 600ms ease-in-out, width 300ms ease-in-out, opacity 300ms ease-in-out;
+  transition: translate 600ms ease-in-out;
   cursor: pointer;
 }
 .menu-choice i {

@@ -41,6 +41,7 @@
     opacity: 0;
     height: auto;
     transition: transform 600ms ease-in-out, width 300ms ease-in-out, opacity 300ms ease-in-out;
+    transition: translate 600ms ease-in-out;
     cursor: pointer;
     & i {
         color: #ffff;
