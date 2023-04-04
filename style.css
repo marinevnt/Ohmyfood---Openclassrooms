@@ -121,6 +121,9 @@ h2 {
   width: 80px;
   opacity: 1;
 }
+.button-card:hover > .menu-choice > i {
+  transform: rotate(-360deg);
+}
 .button-card--text {
   padding: 10px 12px;
   overflow: hidden;
@@ -439,15 +442,8 @@ form input {
   align-items: center;
   justify-content: center;
   width: 80px;
-  transition: transform 200ms ease-in-out;
+  transition: transform 600ms ease-in-out;
   transform: rotate(0deg);
-}
-.menu-choice:hover {
-  transform: translate(0px);
-  width: 80px;
-}
-.menu-choice:hover > i {
-  transform: rotate(-360deg);
 }
 
 @media all and (min-width: 665px) {

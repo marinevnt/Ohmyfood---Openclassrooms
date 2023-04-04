@@ -93,6 +93,11 @@
         width: 80px;
         opacity: 1;
     }
+
+    &:hover > .menu-choice > i {
+        transform: rotate(-360deg);
+    }
+
     &--text {
         padding: 10px 12px;
         overflow: hidden;
