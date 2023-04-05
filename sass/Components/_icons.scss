@@ -26,4 +26,7 @@
 #header-arrow {
     font-size: 20px;
     color: $footer-background;
+    &:hover {
+        color: #9356DC;
+    }
 }

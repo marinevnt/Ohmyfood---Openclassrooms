@@ -258,6 +258,9 @@ h2 {
   font-size: 20px;
   color: #353535;
 }
+#header-arrow:hover {
+  color: #9356DC;
+}
 
 header {
   font-family: "Shrikhand", cursive;
