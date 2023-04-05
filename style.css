@@ -52,6 +52,11 @@ h2 {
   animation-delay: 600ms;
 }
 
+.animation-opacity4 {
+  animation: opacity 1000ms forwards;
+  animation-delay: 800ms;
+}
+
 /*Bouton général EXPLORER et COMMANDER*/
 .button__round {
   border-radius: 25px;
