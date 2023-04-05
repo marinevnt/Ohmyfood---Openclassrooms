@@ -1,9 +1,33 @@
 /*Appartition des plats en cascade*/
 @keyframes translate {
     0% {
-        translate: 30px;
+        translate: 0px -50px;
     }
     100% {
         translate: 0px;
     }
+}
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animation-delay {
+    animation: translate 1000ms forwards;
+}
+.animation-opacity1 {
+    animation: opacity 1000ms forwards;
+    animation-delay: 200ms;
+}
+.animation-opacity2 {
+    animation: opacity 1000ms forwards;
+    animation-delay: 400ms;
+}
+.animation-opacity3 {
+    animation: opacity 1000ms forwards;
+    animation-delay: 600ms;
 }

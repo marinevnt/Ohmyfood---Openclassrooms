@@ -19,12 +19,39 @@ h2 {
 /*Appartition des plats en cascade*/
 @keyframes translate {
   0% {
-    translate: 30px;
+    translate: 0px -50px;
   }
   100% {
     translate: 0px;
   }
 }
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animation-delay {
+  animation: translate 1000ms forwards;
+}
+
+.animation-opacity1 {
+  animation: opacity 1000ms forwards;
+  animation-delay: 200ms;
+}
+
+.animation-opacity2 {
+  animation: opacity 1000ms forwards;
+  animation-delay: 400ms;
+}
+
+.animation-opacity3 {
+  animation: opacity 1000ms forwards;
+  animation-delay: 600ms;
+}
+
 /*Bouton général EXPLORER et COMMANDER*/
 .button__round {
   border-radius: 25px;
@@ -115,6 +142,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  opacity: 0;
 }
 .button-card:hover > .menu-choice {
   transform: translate(0px);
@@ -154,18 +182,6 @@ h2 {
   margin-bottom: 0px;
   width: 10%;
   justify-content: end;
-}
-.button-card--delay1 {
-  animation: translate 400ms forwards;
-  animation-delay: 0s;
-}
-.button-card--delay2 {
-  animation: translate 400ms forwards;
-  animation-delay: 150ms;
-}
-.button-card--delay3 {
-  animation: translate 400ms forwards;
-  animation-delay: 300ms;
 }
 
 .button-position {

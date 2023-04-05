@@ -88,16 +88,15 @@
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    opacity: 0;
     &:hover > .menu-choice {
         transform: translate(0px);
         width: 80px;
         opacity: 1;
     }
-
     &:hover > .menu-choice > i {
         transform: rotate(-360deg);
     }
-
     &--text {
         padding: 10px 12px;
         overflow: hidden;
@@ -128,19 +127,6 @@
         margin-bottom: 0px;
         width: 10%;
         justify-content: end;
-    }
-    &--delay1 {
-        animation: translate 400ms forwards;
-        animation-delay: 0s;
-    }
-    &--delay2 {
-        animation: translate 400ms forwards;
-        animation-delay: 150ms;
-    }
-    &--delay3 {
-        animation: translate 400ms forwards;
-        animation-delay: 300ms;
-        
     }
 }
 
