@@ -57,6 +57,60 @@ h2 {
   animation-delay: 800ms;
 }
 
+.loader-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-bar {
+  width: 30px;
+  height: 80px;
+  margin-right: 5px;
+  display: inline-block;
+  opacity: 0;
+  animation: grow 1000ms linear;
+  animation-iteration-count: 3;
+}
+.loader-bar--delay1 {
+  animation-delay: 0ms;
+  background-color: #9356DC;
+}
+.loader-bar--delay2 {
+  animation-delay: 100ms;
+  background-color: #99E2D0;
+}
+.loader-bar--delay3 {
+  animation-delay: 200ms;
+  background-color: #FF79DA;
+}
+.loader-bar--delay4 {
+  animation-delay: 300ms;
+  background-color: #99E2D0;
+}
+.loader-bar--delay5 {
+  animation-delay: 400ms;
+  background-color: #9356DC;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scaleY(2);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scaleY(0);
+    opacity: 1;
+  }
+}
 /*Bouton général EXPLORER et COMMANDER*/
 .button__round {
   border-radius: 25px;
