@@ -16,32 +16,6 @@ h2 {
   margin-left: 20px;
 }
 
-/*LOADER*/
-@keyframes grow {
-  0% {
-    transform: scaleY(0);
-    opacity: 1;
-  }
-  50% {
-    transform: scaleY(2);
-    opacity: 0.6;
-  }
-  100% {
-    transform: scaleY(0);
-    opacity: 1;
-  }
-}
-@keyframes transparence {
-  0% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 /*Appartition des plats en cascade*/
 @keyframes translate {
   0% {
@@ -83,60 +57,119 @@ h2 {
   animation-delay: 800ms;
 }
 
-.loader-container {
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  position: fixed;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: transparence 4s forwards;
+/*.loader-container {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFF;
+    position: fixed;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: transparence 4s forwards;
 }
-
 .loader-bar {
-  width: 30px;
-  height: 80px;
-  margin-right: 5px;
-  display: inline-block;
-  opacity: 0;
-  animation: grow 1000ms linear;
-  animation-iteration-count: 3;
-}
-.loader-bar--delay1 {
-  animation-delay: 0ms;
-  background-color: #9356DC;
-}
-.loader-bar--delay2 {
-  animation-delay: 100ms;
-  background-color: #99E2D0;
-}
-.loader-bar--delay3 {
-  animation-delay: 200ms;
-  background-color: #FF79DA;
-}
-.loader-bar--delay4 {
-  animation-delay: 300ms;
-  background-color: #99E2D0;
-}
-.loader-bar--delay5 {
-  animation-delay: 400ms;
-  background-color: #9356DC;
+    width: 30px;
+    height: 80px;
+    margin-right: 5px;
+    display: inline-block;
+    opacity: 0;
+    animation: grow 1000ms linear;
+    animation-iteration-count: 3;
+    &--delay1 {
+        animation-delay: 0ms;
+        background-color:#9356DC ;
+    }
+    &--delay2 {
+        animation-delay: 100ms;
+        background-color: #99E2D0;
+    }
+    &--delay3 {
+        animation-delay: 200ms;
+        background-color: #FF79DA;
+    }
+    &--delay4 {
+        animation-delay: 300ms;
+        background-color: #99E2D0;
+    }
+    &--delay5 {
+        animation-delay: 400ms;
+        background-color: #9356DC;
+    }
 }
 
 @keyframes grow {
+    0% {
+        transform: scaleY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: scaleY(2);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scaleY(0);
+        opacity: 1;
+    }
+}
+@keyframes transparence {
+    0% {
+        opacity: 1;
+        z-index: 1;
+    }
+    75% {
+        opacity: 1;
+        z-index: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+} 
+*/
+.loader-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  margin: auto;
+  animation: transparence 4s forwards;
+  pointer-events: none;
+}
+
+.rotate-circle {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 20px solid white;
+  border-top-color: white;
+  border-right-color: #9356dc;
+  border-bottom-color: #ff79da;
+  border-left-color: #99E2D0;
+  animation: rotate 1000ms ease-out;
+  animation-iteration-count: 3;
+}
+
+.fixed-circle {
+  display: flex;
+  margin: 20px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: #9356dc;
+  opacity: 0.9;
+}
+
+@keyframes rotate {
   0% {
-    transform: scaleY(0);
-    opacity: 1;
-  }
-  50% {
-    transform: scaleY(2);
-    opacity: 0.6;
+    transform: rotate(0deg);
   }
   100% {
-    transform: scaleY(0);
-    opacity: 1;
+    transform: rotate(360deg);
   }
 }
 @keyframes transparence {
@@ -249,7 +282,6 @@ h2 {
 .button-card:hover > .menu-choice {
   transform: translate(0px);
   width: 80px;
-  opacity: 1;
 }
 .button-card:hover > .menu-choice > i {
   transform: rotate(-360deg);
@@ -564,7 +596,7 @@ form input {
   align-items: center;
   justify-content: center;
   width: 80px;
-  transition: transform 600ms ease-in-out;
+  transition: 600ms ease-in-out;
   transform: rotate(0deg);
 }
 
