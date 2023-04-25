@@ -416,7 +416,8 @@ form input {
   margin-bottom: 60px;
 }
 .restaurant-presentation ul {
-  padding-left: 20px;
+  margin-left: 20px;
+  padding: 0;
 }
 .restaurant-presentation li {
   list-style: none;
@@ -427,6 +428,7 @@ form input {
 }
 
 .restaurant-choice {
+  position: relative;
   height: 250px;
   width: 95%;
   border-radius: 15px;
@@ -434,7 +436,7 @@ form input {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
 .restaurant-choice img {
-  height: 70%;
+  height: 175px;
   width: 100%;
   border-radius: 15px 15px 0px 0px;
 }
@@ -449,11 +451,11 @@ form input {
   margin: 5px 0px 0px 12px;
 }
 .restaurant-choice .label-new {
-  position: relative;
+  position: absolute;
   width: 80px;
   height: 30px;
-  bottom: 230px;
-  left: 73%;
+  top: 20px;
+  right: 20px;
   background-color: #99E2D0;
   color: #008766;
   border-radius: 2px;
@@ -462,7 +464,6 @@ form input {
 .restaurant-choice .label-new p {
   margin: 6px 9px;
   font-weight: 500;
-  line-height: 30px;
   text-align: center;
   font-size: 15px;
 }
@@ -494,15 +495,19 @@ form input {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 300;
-  margin: 0px 15px 5px 15px;
+  margin: 0px 15px 20px 15px;
 }
-.menu-card .line {
+.menu-card h3::after {
+  content: "";
   width: 35px;
   border: 2px solid #99E2D0;
-  margin-left: 15px;
+  position: absolute;
+  left: 15px;
+  margin-top: 22px;
 }
 .menu-card section {
   margin-top: 40px;
+  position: relative;
 }
 
 /*Sélection du menu*/
@@ -549,8 +554,7 @@ form input {
     flex-wrap: wrap;
   }
   .restaurant-presentation li {
-    width: 50%;
-    max-width: 530px;
+    width: 47%;
   }
   footer {
     display: flex;
@@ -582,7 +586,6 @@ form input {
   }
   #functionning-section .explanation {
     display: flex;
-    justify-content: space-between;
     width: 100%;
   }
   .restaurant-presentation {
